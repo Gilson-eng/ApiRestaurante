@@ -10,7 +10,7 @@ app.use(cors());
 const produtoRoute = require("./routes/produtoRoute");
 app.use("/produtos", produtoRoute);
 
-const loginRoute = require("./routes/loginRoute");
-app.use("/user", loginRoute);
+const userRoute = require("./routes/userRoute");
+app.use("/user", userRoute);
 
 app.listen(PORT, ()=> console.log("Server runnig " + PORT))
